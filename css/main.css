@@ -25,9 +25,10 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "Rubik", "Arial", sans-serif;
-    background-color: #fff;
+    color: var(--paragraph-color);
+    background-color: var(--general-color);
     font-size: 16px;
-    line-height: 1.5;
+    font-weight: 400;
 }
 
 img {
@@ -48,4 +49,136 @@ img {
 /* MAIN-CONTENT */
 .main-content {
     flex-grow: 1;
+}
+
+/* FOOTER */
+.footer-about {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* FOOTER-SOCIAL */
+.footer-social {
+    width: 320px;
+}
+
+.footer-logo {
+    margin-bottom: 15px;
+    display: block;
+}
+
+.footer-logo-img {
+    display: block;
+}
+
+.footer-social {
+    margin-right: 85px;
+}
+
+.footer-about-description {
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+
+.footer-social-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-social-item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.footer-social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32.5px;
+    height: 32.5px;
+    list-style: none;
+}
+
+.footer-social-link {
+    text-decoration: none;
+}
+
+.footer-social-icon {
+    display: block;
+}
+
+/* FOOTER-LINKS */
+.footer-links {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.footer-links-list {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links-item {
+    list-style: none;
+}
+
+.footer-links-item:first-child {
+    font-weight: 500;
+}
+
+.footer-links-link {
+    color: var(--heading-color);
+    font-size: 18px;
+    line-height: 40px;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.footer-links-link:hover {
+    color: var(--striking-color);
+}
+
+/* FOOTER-LINE */
+.footer-line {
+    height: 1px;
+    border: 0;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    background-color: #969696;
+}
+
+/* FOOTER-AUTHORSHIP  */
+.footer-authorship {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.the-author span,
+.the-support-link {
+    font-size: 14px;
+    color: var(--heading-color);
+}
+
+.the-support-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.the-support-item {
+    list-style: none;
+}
+
+.the-support-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.the-support-link {
+    text-decoration: none;
 }
