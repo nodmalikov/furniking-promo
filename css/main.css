@@ -93,11 +93,6 @@ img {
 }
 
 .footer-social-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 32.5px;
-    height: 32.5px;
     list-style: none;
 }
 
@@ -106,6 +101,8 @@ img {
 }
 
 .footer-social-icon {
+    width: 32.5px;
+    height: 32.5px;
     display: block;
 }
 
