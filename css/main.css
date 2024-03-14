@@ -51,7 +51,12 @@ img {
     flex-grow: 1;
 }
 
-/* FOOTER */
+
+/* SITE-FOOTER */
+.site-footer {
+    padding-bottom: 10px;
+}
+
 .footer-about {
     display: flex;
     align-items: flex-start;
@@ -62,6 +67,7 @@ img {
     width: 320px;
 }
 
+/* FOOTER-LOGO */
 .footer-logo {
     margin-bottom: 15px;
     display: block;
