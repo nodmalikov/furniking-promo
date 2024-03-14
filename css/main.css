@@ -87,7 +87,7 @@ img {
 .blog-card-item-three,
 .blog-card-item-four {
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
 }
 
