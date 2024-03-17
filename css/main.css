@@ -61,6 +61,127 @@ img {
 }
 
 
+/* PRODUCT-SECTION */
+.product {
+    padding-bottom: 120px;
+}
+
+.product-heading {
+    margin-top: 0;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.product-list {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-item {
+    list-style: none;
+}
+
+.product-item:not(:last-child) {
+    margin-right: 65px;
+}
+
+.product-link {
+    text-decoration: none;
+    color: #c2c2c2;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.product-link:focus {
+    color: var(--striking-color);
+}
+
+/* PRODUCT-CARDS */
+.product-cards {
+    margin-left: -30px;
+    margin-bottom: -45px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    margin: 0;
+    margin-left: 30px;
+    margin-bottom: 45px;
+}
+
+.product-card-img-tex {
+    display: inline-block;
+    padding: 2px 8px;
+    border-bottom-right-radius: 5px;
+    background-color: var(--striking-color);
+    color: var(--general-color);
+    position: absolute;
+}
+
+.card-discount-blue {
+    background-color: #00b7f1;
+}
+
+.card-discount-tomato {
+    background-color: #ff6868;
+}
+
+.product-card-img {
+    width: 270px;
+    height: 288px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.product-card-name {
+    margin-bottom: 9px;
+    color: #757575;
+    font-size: 14px;
+    line-height: 1.3;
+    display: inline-block;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.product-card-heading {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #11142d;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.product-card-price {
+    display: flex;
+    align-items: center;
+}
+
+.product-card-price-discount {
+    display: inline-block;
+    margin-right: 7px;
+    color: var(--striking-color);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.product-card-price-real {
+    font-size: 18px;
+    line-height: 1.2;
+    text-decoration: line-through;
+    color: #ccc;
+    display: inline-block;
+    margin-right: auto;
+}
+
+
 /* SITE-TESTIMONIALS */
 .testimonials {
     padding-bottom: 120px;
@@ -124,7 +245,7 @@ img {
 }
 
 
-/* SITE-BLOG */
+/* BLOG-SECTION */
 .blog {
     padding-bottom: 120px;
 }
