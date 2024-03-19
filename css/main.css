@@ -700,3 +700,17 @@ only screen and (                min-resolution: 2dppx) {
         background-image: url("../img/summer-chair@2x.jpeg");
     }
 }
+
+/* MEDIA-QUERIES */
+@media only screen and (max-width: 1000px) {
+    .offer-cards {
+        min-width: 700px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .offer-card:first-child {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
