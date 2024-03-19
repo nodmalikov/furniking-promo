@@ -46,6 +46,19 @@ img {
     margin-right: auto;
 }
 
+/* SITE-BUTTON */
+.button {
+    text-transform: uppercase;
+    border-radius: 2px;
+    padding: 7px 10px;
+    font-weight: 500;
+    font-size: 12px;
+    border: 0;
+    display: block;
+    color: #fff;
+    background-color: var(--striking-color);
+}
+
 /* MAIN-CONTENT */
 .main-content {
     flex-grow: 1;
@@ -58,6 +71,107 @@ img {
     line-height: 45px;
     text-transform: uppercase;
     color: var(--heading-color);
+}
+
+
+/* OFFER-SECTION */
+.offer {
+    margin-bottom: 120px;
+}
+
+.offer-heading {
+    margin-top: 0;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.offer-cards {
+    display: flex;
+}
+
+.offer-card {
+    padding: 28px 24px;
+    width: 570px;
+}
+
+.offer-card:first-child {
+    background-image: url("../img/room-furniture.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.offer-card:last-child {
+    background-image: url("../img/modern-chair.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.offer-card:not(:last-child) {
+    margin-right: 30px;
+}
+
+.offer-card-heading {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--heading-color);
+    text-transform: capitalize;
+}
+
+.offer-card-paragraph {
+    margin-top: 0;
+    font-size: 12px;
+    margin-bottom: 22px;
+    line-height: 18px;
+}
+
+.offer-card-price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.product-card-price-wrapper {
+    margin-right: 20px;
+}
+
+.offer-product-price-time {
+    display: flex;
+    align-items: center;
+}
+
+.offer-price-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 6px 10px;
+    background-color: var(--striking-color);
+    color: #fff;
+}
+
+.offer-price-circle:not(:last-child) {
+    margin-right: 18px;
+}
+
+.offer-price-circle-number {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.offer-price-circle-text {
+    display: inline-block;
+    font-size: 8px;
+    text-transform: uppercase;
+    line-height: 1.2;
 }
 
 
@@ -115,7 +229,7 @@ img {
     margin-bottom: 45px;
 }
 
-.product-card-img-tex {
+.product-card-img-text {
     display: inline-block;
     padding: 2px 8px;
     border-bottom-right-radius: 5px;
@@ -511,7 +625,34 @@ img {
     text-decoration: none;
 }
 
-/* RETINA BG */
+
+/* OFFER-SECTION RETINA-BG */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .offer-card:first-child {
+        background-image: url("../img/room-furniture@2x.jpg");
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .offer-card:last-child {
+        background-image: url("../img/modern-chair@2x.jpg");
+    }
+}
+
+
+/* BLOG-SECTION RETINA-BG */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
