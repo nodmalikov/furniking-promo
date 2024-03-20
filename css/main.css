@@ -74,6 +74,87 @@ img {
 }
 
 
+/* PROFFER-SECTION */
+.proffer {
+    padding-bottom: 120px;
+    display: flex;
+}
+
+.proffer-basic {
+    width: 668px;
+    padding: 50px 30px 350px;
+    margin-right: 15px;
+    background-image: url("../img/furniture-collections.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.proffer-main-heading {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--heading-color);
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.proffer-main-price {
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--striking-color);
+    margin-top: 0;
+    margin-bottom: 13px;
+    display: inline-block;
+}
+
+.proffer-main-direction {
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+}
+
+.proffer-main-direction::after {
+    content: "";
+    background-image: url("../img/proffer-direction.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 11px;
+    height: 9px;
+    margin-left: 3px;
+}
+
+.proffer-omissible-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.proffer-omissible {
+    width: 485px;
+    padding: 30px 25px 120px;
+}
+
+.proffer-omissible:first-child {
+    margin-bottom: 15px;
+    background-image: url("../img/geometric-bookcase.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.proffer-omissible:last-child {
+    background-image: url("../img/sofa-collections.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.proffer-omissible-heading {
+    font-weight: 450;
+}
+
+
 /* TRENDING-SECTION */
 .trending {
     padding-bottom: 120px;
@@ -709,6 +790,7 @@ only screen and (                min-resolution: 2dppx) {
 
 /* MEDIA-QUERIES */
 @media only screen and (max-width: 1000px) {
+    /* OFFER-SECTION */
     .offer-cards {
         min-width: 700px;
         display: flex;
@@ -717,6 +799,20 @@ only screen and (                min-resolution: 2dppx) {
 
     .offer-card:first-child {
         margin-right: 0;
-        margin-bottom: 30px;
+    }
+
+    /* PROFFER-SECTION */
+    .proffer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .proffer-basic {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .proffer-omissible {
+        margin-bottom: 20px;
     }
 }
