@@ -226,8 +226,20 @@ img {
     display: block;
 }
 
-.sitenav-button-text {
+.sitenav-button-wrapper {
     display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.sitenav-button-img {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+.sitenav-button-text {
+    display: inline-block;
     color: #fff;
     font-weight: 500;
     text-transform: uppercase;
@@ -256,15 +268,6 @@ img {
     color: var(--heading-color);
     text-decoration: none;
     text-transform: capitalize;
-}
-
-.sitenav-button-text::before {
-    margin-right: 20px;
-    content: "";
-    background-image: url("../img/nav-menu.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 24px 24px;
 }
 
 .sitenav-list {
