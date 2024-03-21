@@ -57,6 +57,13 @@ img {
     display: block;
     color: #fff;
     background-color: var(--striking-color);
+    cursor: pointer;
+}
+
+/* SITE-LOGO */
+.site-logo-img,
+.site-logo {
+    display: block;
 }
 
 /* MAIN-CONTENT */
@@ -72,6 +79,215 @@ img {
     line-height: 45px;
     text-transform: uppercase;
     color: var(--heading-color);
+}
+
+
+/* HEADER-SECTION */
+.site-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header-welcome {
+    background-color: var(--striking-color);
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.header-welcome-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.header-welcome-tex {
+    margin-right: auto;
+}
+
+.language-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.language-toggle-link {
+    text-decoration: none;
+    display: flex;
+    color: #fff;
+}
+
+.language-toggle-link::after {
+    content: "";
+    background-image: url("../img/down-button.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 12px;
+    height: 12px;
+    margin-left: 7px;
+}
+
+.language-toggle-link-active {
+    display: none;
+}
+
+.header-welcome-dash {
+    width: 2px;
+    height: 20px;
+    background-color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.header-welcome-login {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* HEADER-SEARCH */
+.header-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.header-form {
+    display: flex;
+    border: 2px solid var(--striking-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.field-input {
+    border: 0;
+    padding: 15px 25px;
+    font-size: 14px;
+    color: #b0b0b0;
+}
+
+.search-button {
+    border: 0;
+    padding: 0;
+    display: block;
+    width: 55px;
+    background-color: var(--striking-color);
+    background-image: url("../img/search-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.header-icon-group {
+    display: flex;
+    align-items: center;
+}
+
+.header-icon-img {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.header-icon-img:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* SITENAV */
+.sitenav {
+    background-color: #f7f8fa;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.sitenav-container {
+    display: flex;
+    align-items: center;
+}
+
+.sitenav-button-wrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.sitenav-button {
+    border: 0;
+    padding: 22px 30px;
+    background-color: var(--striking-color);
+    display: block;
+    cursor: pointer;
+}
+
+.sitenav-button:hover
+.sitenav-button-list {
+    display: block;
+}
+
+.sitenav-button-text {
+    display: flex;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.sitenav-button-list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #f7f8fa;
+    display: none;
+}
+
+.sitenav-button-item {
+    width: 100%;
+    list-style: none;
+    padding: 10px 30px 14px;
+}
+
+.sitenav-button-item:not(:last-child) {
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.sitenav-button-link {
+    font-size: 14px;
+    color: var(--heading-color);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.sitenav-button-text::before {
+    margin-right: 20px;
+    content: "";
+    background-image: url("../img/nav-menu.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 24px 24px;
+}
+
+.sitenav-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 82px;
+}
+
+.sitenav-item {
+    list-style: none;
+}
+
+.sitenav-item:not(:last-child) {
+    margin-right: 65px;
+}
+
+.sitenav-link {
+    font-size: 14px;
+    color: var(--heading-color);
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 
@@ -795,11 +1011,6 @@ img {
 /* FOOTER-LOGO */
 .footer-logo {
     margin-bottom: 15px;
-    display: block;
-}
-
-.footer-logo-img {
-    display: block;
 }
 
 .footer-social {
@@ -1042,6 +1253,7 @@ only screen and (                min-resolution: 2dppx) {
 
     .offer-card:first-child {
         margin-right: 0;
+        margin-bottom: 20px;
     }
 
     /* PROFFER-SECTION */
